@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="col m5" id="register-form">
+        <div class="card-panel">
+            <h4 class="header2 red-text">Register</h4>
+            <div class="row">
+                <form class="col s12" (submit)="registerUser()">
+                    <div class="row ">
+                        <div class="input-field col s12 ">
+                            <i class="material-icons red-text prefix ">account_circle</i>
+                            <input [(ngModel)]="user.displayName" name="name" id="name4" type="text" class="validate">
+                            <label for="first_name ">Name</label>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="input-field col s12 ">
+                            <i class="material-icons red-text prefix ">email</i>
+                            <input [(ngModel)]="user.email" id="email4" name="email" type="email" class="validate">
+                            <label for="email ">Email</label>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="input-field col s12 ">
+                            <i class="material-icons red-text prefix ">lock</i>
+                            <input [(ngModel)]="user.password" id="password5" name="password" type="password" class="validate">
+                            <label for="password ">Password</label>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="input-field col s12 ">
+                            <i class="material-icons red-text prefix ">lock</i>
+                            <input id="password5" type="password" class="validate">
+                            <label for="password ">Confirm Password</label>
+                        </div>
+                        <div class="row ">
+                            <div class="input-field col s12">
+                                <button class="btn red waves-effect waves-light right red darken-4" type="submit" name="action">Register
+                                  <i class="material-icons right">send</i>
+              </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

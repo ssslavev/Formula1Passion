@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    background-image: url('https://monsterdesignstudios.com/wp-content/uploads/2014/09/website-design-slider-background-stockton.jpg');
+}
+
+.nav-wrapper {
+    margin-bottom: 10px;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
