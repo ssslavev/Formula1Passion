@@ -1,3 +1,17 @@
 .nav-wrapper ul li a:hover {
     color: black;
 }
+
+ul {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+#nav-flags {
+    height: 50px;
+}
+
+#nav-flags ul li a {
+    margin-top: 4px;
+}

@@ -1,16 +1,82 @@
-<nav class="red ">
+<nav class="red">
     <div class="nav-wrapper row">
         <a [routerLink]="['home']" class="brand-logo col s2 offset-s1"><img src="https://www.thisisopus.com/wp-content/uploads/2016/10/f1-logo-150.png" width="140"></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a [routerLink]="['home']">Home</a></li>
-            <li><a [routerLink]="['/teams']">Teams</a></li>
+            <li><a [routerLink]="['teams']">Teams</a></li>
             <li><a [routerLink]="['drivers']">Drivers</a></li>
-            <li><a [routerLink]="['circuits']">Circuits</a></li>
-            <li><a [routerLink]="['/ranking']">Ranking</a></li>
+            <li><a [routerLink]="['races']">Races</a></li>
+            <li><a [routerLink]="['ranking']">Ranking</a></li>
             <li><a *ngIf="!(authService.user | async)" [routerLink]="['register']">Register</a></li>
             <li><a *ngIf="!(authService.user | async)" [routerLink]="['login']">Login</a></li>
             <li><a *ngIf="authService.user | async" [routerLink]="['profile']">Welcome, {{ (authService.user | async)?.displayName }}!</a></li>
             <li><a *ngIf="authService.user | async" (click)="logOut()">Logout</a></li>
+        </ul>
+    </div>
+</nav>
+<nav class="grey lighten-4" id="nav-flags">
+    <div class="nav-wrapper row">
+        <ul id="nav-mobile" class="hide-on-med-and-down">
+            <li>
+                <a href="#"><img src="../../../assets/images/flags/australia-flag-2.png" width="35"></a>
+            </li>
+            <li>
+                <a href="#"><img src="../../../assets/images/flags/Custom-Icon-Design-Round-World-Flags-China.ico" width="35"></a>
+            </li>
+            <li>
+                <a href="#"><img src="../../../assets/images/flags/Bahrain Flag.png" width="35"></a>
+            </li>
+            <li>
+                <a href="#"><img src="../../../assets/images/flags/Button Flag Russia-256x256.png" width="35"></a>
+            </li>
+            <li>
+                <a href="#"><img src="../../../assets/images/flags/Spain Flag.ico" width="35"></a>
+            </li>
+            <li>
+                <a href="#"><img src="../../../assets/images/flags/Button Flag Monaco-256x256.png" width="35"></a>
+            </li>
+            <li>
+                <a href="#"><img src="../../../assets/images/flags/canada-flag-1.png" width="35"></a>
+            </li>
+            <li>
+                <a href="#"><img src="../../../assets/images/flags/azerbaijan-flag-2.png" width="35"></a>
+            </li>
+            <li>
+                <a href="#"><img src="../../../assets/images/flags/austria-flag-2.png" width="35"></a>
+            </li>
+            <li>
+                <a href="#"><img src="../../../assets/images/flags/United Kingdom Flag.ico" width="35"></a>
+            </li>
+            <li>
+                <a href="#" title="Хунгароринг, Унгария"><img src="../../../assets/images/flags/Hungary Flag.ico" width="35"></a>
+            </li>
+            <li>
+                <a href="#"><img src="../../../assets/images/flags/Belgium Flag.png" width="35"></a>
+            </li>
+            <li>
+                <a href="#"><img src="../../../assets/images/flags/ffa69ecd2399788928bf729f9395b0f4.png" width="35"></a>
+            </li>
+            <li>
+                <a href="#"><img src="../../../assets/images/flags/Singapore Flag.ico" width="35"></a>
+            </li>
+            <li>
+                <a href="#"><img src="../../../assets/images/flags/Flag_of_Malaysia_-_Circle-256.png" width="35"></a>
+            </li>
+            <li>
+                <a href="#"><img src="../../../assets/images/flags/Flag of Japan.png" width="35"></a>
+            </li>
+            <li>
+                <a href="#"><img src="../../../assets/images/flags/4b7f0c0ec2633afc83bfdae6375fdb87.png" width="35"></a>
+            </li>
+            <li>
+                <a href="#"><img src="../../../assets/images/flags/Mexico Flag.png" width="35"></a>
+            </li>
+            <li>
+                <a href="#"><img src="../../../assets/images/flags/73566_flag_256x256.png" width="35"></a>
+            </li>
+            <li>
+                <a href="#"><img src="../../../assets/images/flags/AET17AED-NM-UAE-Round.png" width="35"></a>
+            </li>
         </ul>
     </div>
 </nav>

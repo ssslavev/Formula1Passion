@@ -16,6 +16,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
 import { environment } from '../environments/environment';
+import { RacesComponent } from './components/races/races.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { environment } from '../environments/environment';
     HomeComponent,
     FooterComponent,
     RegisterComponent,
-    LoginComponent
+    LoginComponent,
+    RacesComponent
   ],
   imports: [
     BrowserModule,
