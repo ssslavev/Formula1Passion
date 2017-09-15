@@ -1,3 +1,4 @@
+import { RaceDetailsComponent } from './components/race-details/race-details.component';
 import { RacesComponent } from './components/races/races.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
@@ -11,7 +12,8 @@ const appRoutes: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'register', component: RegisterComponent },
     { path: 'login', component: LoginComponent },
-    {path: 'races', component: RacesComponent}
+    {path: 'races', component: RacesComponent},
+    {path: 'races/:id', component: RaceDetailsComponent}
 ];
 
 @NgModule({

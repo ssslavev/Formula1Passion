@@ -1,3 +1,4 @@
+import { RacesService } from './services/races.service';
 import { AuthService } from './services/auth.service';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -6,8 +7,9 @@ import { FormsModule } from '@angular/forms';
 import { MaterializeModule } from 'angular2-materialize';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
-import{ ToastModule} from 'ng2-toastr/ng2-toastr';
+import { ToastModule } from 'ng2-toastr/ng2-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
@@ -17,6 +19,7 @@ import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
 import { environment } from '../environments/environment';
 import { RacesComponent } from './components/races/races.component';
+import { RaceDetailsComponent } from './components/race-details/race-details.component';
 
 
 @NgModule({
@@ -27,7 +30,8 @@ import { RacesComponent } from './components/races/races.component';
     FooterComponent,
     RegisterComponent,
     LoginComponent,
-    RacesComponent
+    RacesComponent,
+    RaceDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -37,9 +41,11 @@ import { RacesComponent } from './components/races/races.component';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     BrowserAnimationsModule,
-    ToastModule.forRoot()
+    ToastModule.forRoot(),
+    HttpClientModule
   ],
-  providers: [AuthService],
+  providers: [AuthService,
+    RacesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
